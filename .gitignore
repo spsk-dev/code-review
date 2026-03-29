@@ -1,0 +1,8 @@
+.env*.local
+.DS_Store
+*.swp
+*~
+.planning/
+.context/
+.memsearch/
+.claude/worktrees/
