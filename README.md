@@ -87,13 +87,7 @@ docs/case-studies/
 
 ## Part of SpSk
 
-SpSk publishes polished AI agent skills as open-source Claude Code plugins.
-
-| Plugin | What it does | Install |
-|--------|-------------|---------|
-| [tasteful-design](https://github.com/spsk-dev/tasteful-design) | 7-specialist design review + SPA flow audit | `claude /install-plugin tasteful-design@spsk-dev/tasteful-design` |
-| **code-review** | 7-agent multi-model PR review | `claude /install-plugin code-review@spsk-dev/code-review` |
-| [consensus](https://github.com/spsk-dev/consensus) | 3-model conclusion validation (1-10 confidence) | `claude /install-plugin consensus@spsk-dev/consensus` |
+Polished AI agent skills for Claude Code. See more at [github.com/spsk-dev](https://github.com/spsk-dev).
 
 ## License
 
