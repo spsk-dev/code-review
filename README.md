@@ -78,9 +78,22 @@ docs/case-studies/
   code-review-bugs-caught.md  # Real-world impact case study
 ```
 
+## Requirements
+
+- **Claude Code** — plugin host
+- **GitHub CLI** (`gh`) — required for PR fetching. Must be authenticated (`gh auth login`)
+- **Codex CLI** (optional) — for multi-model review. Falls back gracefully if unavailable.
+- **Gemini CLI** (optional) — for multi-model review. Falls back gracefully if unavailable.
+
 ## Part of SpSk
 
-This plugin is part of [SpSk](https://github.com/spsk-dev) — polished AI agent skills for Claude Code. See also [tasteful-design](https://github.com/spsk-dev/tasteful-design) for multi-agent visual design review.
+SpSk publishes polished AI agent skills as open-source Claude Code plugins.
+
+| Plugin | What it does | Install |
+|--------|-------------|---------|
+| [tasteful-design](https://github.com/spsk-dev/tasteful-design) | 7-specialist design review + SPA flow audit | `claude /install-plugin tasteful-design@spsk-dev/tasteful-design` |
+| **code-review** | 7-agent multi-model PR review | `claude /install-plugin code-review@spsk-dev/code-review` |
+| [consensus](https://github.com/spsk-dev/consensus) | 3-model conclusion validation (1-10 confidence) | `claude /install-plugin consensus@spsk-dev/consensus` |
 
 ## License
 

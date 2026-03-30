@@ -2,6 +2,10 @@
   "name": "code-review",
   "version": "1.0.0",
   "description": "Multi-model PR code review using Claude, Codex, and Gemini in parallel. 7 agents, confidence scoring, 3-tier degradation.",
+  "author": {
+    "name": "SpSk",
+    "url": "https://github.com/spsk-dev"
+  },
   "homepage": "https://github.com/spsk-dev/code-review",
-  "commands": ["commands/code-review.md"]
+  "license": "MIT"
 }
