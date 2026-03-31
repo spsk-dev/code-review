@@ -39,9 +39,12 @@ The review always works. External CLIs make it better but aren't required.
 
 ## Install
 
-**Via Claude Code plugin registry:**
 ```bash
-claude /install-plugin code-review@spsk-dev/code-review
+# Add SpSk marketplace (one time)
+claude plugins marketplace add spsk-dev/marketplace
+
+# Install
+claude plugins install code-review@spsk
 ```
 
 **Manual:**
