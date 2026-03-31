@@ -39,18 +39,52 @@ The review always works. External CLIs make it better but aren't required.
 
 ## Install
 
+### 1. Install the plugin
+
 ```bash
 # Add SpSk marketplace (one time)
 claude plugins marketplace add spsk-dev/marketplace
 
-# Install
+# Install code-review
 claude plugins install code-review@spsk
 ```
 
-**Manual:**
+### 2. Set up GitHub CLI (required)
+
+```bash
+# Install gh if you don't have it
+brew install gh    # macOS
+# or: sudo apt install gh   # Linux
+
+# Authenticate
+gh auth login
+```
+
+### 3. Optional: Install external model CLIs (for Tier 1 multi-model review)
+
+```bash
+# Codex CLI
+npm install -g @openai/codex
+
+# Gemini CLI
+npm install -g @anthropic/gemini-cli
+```
+
+Without external CLIs, the review uses 5 Claude-only agents (Tier 3). Still useful, but you miss the cross-model diversity that catches different blind spots.
+
+### Verify installation
+
+```bash
+claude /help
+# Look for: /code-review
+```
+
+### Manual install (alternative)
+
 ```bash
 git clone https://github.com/spsk-dev/code-review.git
 cd code-review && bash install.sh
+# Then still run steps 2-3 above for gh and external CLIs
 ```
 
 ## Why Multi-Model?
