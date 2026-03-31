@@ -2,10 +2,18 @@
 
 Standard output formatting for the code-review plugin. All command output MUST use these patterns.
 
-## Signature Line
+## Brand Header
+
+The first output of every code-review command:
 
 ```
- SpSk  code-review  v{version}  ───  {agent_count} agents  ·  tier {tier}
+ ███████╗██████╗ ███████╗██╗  ██╗
+ ██╔════╝██╔══██╗██╔════╝██║ ██╔╝
+ ███████╗██████╔╝███████╗█████╔╝
+ ╚════██║██╔═══╝ ╚════██║██╔═██╗
+ ███████║██║     ███████║██║  ██╗
+ ╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝
+ code-review  v{version}  ───  {agent_count} agents  ·  tier {tier}
 ```
 
 - `{version}`: Read from `${CLAUDE_PLUGIN_ROOT}/VERSION`
