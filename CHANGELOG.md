@@ -2,6 +2,12 @@
 
 All notable changes to the SpSk code-review plugin.
 
+## [1.1.0] - 2026-03-31
+
+### Added
+
+- **HTML report generation**: `scripts/generate-report.sh` produces a self-contained HTML report from `review-state.json`. Agent cards, high-confidence findings with file references, dark/light mode, print-to-PDF.
+
 ## [1.0.0] - 2026-03-29
 
 ### Added
