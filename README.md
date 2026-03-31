@@ -1,3 +1,7 @@
+```
+ SpSk  · code-review
+```
+
 # Code Review
 
 Multi-model PR code review for Claude Code. Dispatches 7 parallel agents across Claude, Codex, and Gemini for higher coverage and fewer false negatives than any single model.
